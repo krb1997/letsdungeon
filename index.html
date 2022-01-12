@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resources for DnD-ing online">
+    <title>Lets Dungeon Online!</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main class="d-flex flex-column">
+      <!-- HEADER -->
+      <section class="d-flex flex-column" id="titleBlock">
+        <img src="images/logo.svg" />
+      </section>
+
+      <!-- LEAD -->
+      <section class="p-5 text-center" id="leadBlock">
+        <div class="col-lg-6 mx-auto">
+          <p class="lead">
+            For when you cant dungeon together in person, dungeon together
+            online! Here are a bunch of software, resources and creators that
+            I personally use and think are really cool.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- I DONNO AT THIS POINT -->
+    <section class="p-5 text-center">
+      <div class="row">
+        <div class="col-2 d-md-block"></div>
+        <div class="col-8">
+          <div class="blockHeader">
+            <h2>Players</h2>
+            <img src="icons/house.svg">
+            <h2>Characters</h2>
+          </div>
+          <p>
+            Creating a character that fills the persona of one's vision is both
+            an exciting and a daunting task. Creation that breaks the ordinary
+            yet embaces the immersive setting of the DM's world. A character
+            detailed with backstory, strengths and weaknesses, providing a deep
+            look into their personality. A character portrayed with stunning art
+            conveying their style, tastes and culture. Its a challenge... One
+            helped with soild tools, well detailed material and a sprinkle of
+            creativity.
+          </p>
+          <div class="row">
+            <div class="col text-center">
+              <p><b>Writing their past</b></p>
+              <p>
+                <a class="text-white"
+                  href="https://www.dndbeyond.com/marketplace/sourcebooks/players-handbook">
+                  The Players Handbook
+                </a> - An indispensable tool bound with quick build guides,
+                recommendations and ideas to help elevate your character to new
+                heights.
+              </p>
+            </div>
+            <div class="col">
+              <p><b>Painting their style</b></p>
+              <p>
+                <a class="text-white"
+                  href="https://heroforge.com">
+                  HeroForge
+                </a> - Creating a 3D model of your character has never been
+                easier. Export as VTT tokens or even bring your hero into the
+                material plane.
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-md-block"></div>
+      </div>
+    </section>
+
+    <section class="p-5 text-center">
+      <div class="row">
+        <div class="col-2 d-md-block"></div>
+        <div class="col-8">
+          <div class="blockHeader">
+            <h2>Creatures</h2>
+            <img src="icons/dragon.svg">
+            <h2>Monsters</h2>
+          </div>
+        </div>
+        <div class="col-2 d-md-block"></div>
+      </div>
+    </section>
+
+    <section class="p-5 text-center">
+      <div class="row">
+        <div class="col-2 d-md-block"></div>
+        <div class="col-8">
+          <div class="blockHeader">
+            <h2>Worlds</h2>
+            <img src="icons/ship.svg">
+            <h2>Maps</h2>
+          </div>
+        </div>
+        <div class="col-2 d-md-block"></div>
+      </div>
+    </section>
+
+    <section class="p-5 text-center">
+      <div class="row">
+        <div class="col-2 d-md-block"></div>
+        <div class="col-8">
+          <div class="blockHeader">
+            <h2>Tabletop</h2>
+            <img src="icons/chest.svg">
+            <h2>Software</h2>
+          </div>
+        </div>
+        <div class="col-2 d-md-block"></div>
+      </div>
+    </section>
+
+    <script>
+      var titleBlock = document.getElementById('titleBlock');
+
+      function resizeBlock(element) {
+        var height = (900 / 1920) * document.documentElement.clientWidth;
+        titleBlock.style.height = height + 'px';
+      }
+
+      window.addEventListener('resize', function(event) {
+        resizeBlock(titleBlock);
+      }, true);
+
+      resizeBlock(titleBlock);
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
